@@ -4,6 +4,7 @@
 #include "test2.h"
 #include "test3.h"
 #include "test4.h"
+#include "test5.h"
 
  using namespace std;
 
@@ -22,6 +23,9 @@ int main() {
 
 	cout << "Проверка: Ошибка разыменование нулевого указателя. Должна быть ошибка" << endl;
 	test_null_pointer_dereference();
+
+	cout << "Проверка: Ошибка обращения через указатель к удаленной переменной. Должна быть ошибка" << endl;
+	test_pointer_to_null();
 
 	cout << "End program" << endl;
 	return 0;
