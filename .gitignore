@@ -34,3 +34,5 @@
 TestExecutable
 
 *.code-workspace
+
+example.txt

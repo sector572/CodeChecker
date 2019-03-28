@@ -5,12 +5,14 @@
 #include "test3.h"
 #include "test4.h"
 #include "test5.h"
+#include "test6.h"
 
  using namespace std;
 
 
 int main() {
 	cout << "Start program" << endl;
+	
 
 	cout << "Проверка: Ошибка двойного освобождения памяти. Должна быть ошибка" << endl;
 	mem_multiple_free();
@@ -26,6 +28,10 @@ int main() {
 
 	cout << "Проверка: Ошибка обращения через указатель к удаленной переменной. Должна быть ошибка" << endl;
 	test_pointer_to_null();
+
+	cout << "Проверка: На чувствительность к путям выполнения. Код без ошибок" << endl;
+	test_path_sensitive_witout_errors();
+
 
 	cout << "End program" << endl;
 	return 0;
