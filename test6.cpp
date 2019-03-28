@@ -12,7 +12,7 @@ void work_with_file(int condition){
 	ofstream myfile;
 	int flag;
 	if(condition){
-		myfile.open ("example.txt", "r");
+		myfile.open ("example.txt");
 		flag = 1;
 	} else {
 		flag = 0;
