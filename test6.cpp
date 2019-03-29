@@ -24,7 +24,7 @@ void work_with_file(int condition){
 }
 
 
-void test_path_sensitive_witout_errors(){
+void test_ps_no_errors1(){
 	int v1 = rand() % 1000;
 	work_with_file(v1);
 }

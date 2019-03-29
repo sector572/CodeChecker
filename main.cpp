@@ -6,6 +6,7 @@
 #include "test4.h"
 #include "test5.h"
 #include "test6.h"
+#include "test7.h"
 
  using namespace std;
 
@@ -30,8 +31,10 @@ int main() {
 	test_pointer_to_null();
 
 	cout << "Проверка: На чувствительность к путям выполнения. Код без ошибок" << endl;
-	test_path_sensitive_witout_errors();
+	test_ps_no_errors1();
 
+	cout << "Проверка: На чувствительность к путям выполнения. Код без ошибок" << endl;
+	test_ps_no_errors2();
 
 	cout << "End program" << endl;
 	return 0;
